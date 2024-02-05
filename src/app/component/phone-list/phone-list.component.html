@@ -1,0 +1,20 @@
+<table>
+    <tr *ngFor="let a of phones"
+     [ngStyle]="{'background': a.kosher == true ? 'green' : 'red'}">
+     <td> <img *ngIf="a.pic!=undefined" src="{{a.pic}}"/></td>
+     <td>{{ a.code }}</td>
+     <td>{{a.name}}</td>
+    </tr>
+</table>
+<button (click)="morethen5()" [disabled]="phones.length<5">ראיתי</butt0on>
+<select (change="")>
+    <option value="israel">israel</option>.
+    <option value="America">America</option>
+    <option value="England">England</option>
+    <option value="France">France</option>
+    <option value="Holand">Holand</option>
+</select>
+
+
+
+
